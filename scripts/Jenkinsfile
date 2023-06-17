@@ -1,1 +1,15 @@
-test
+pipeline {
+    agent any
+    stages {
+        stage('stage one -test') {
+            steps {
+                echo "Hello world 1"
+            }
+        }
+        stage('stage two - test') {
+            steps {
+                echo "Hello world 2"
+            }
+        }
+    }
+}
